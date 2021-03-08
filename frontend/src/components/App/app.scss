@@ -1,0 +1,16 @@
+.app{
+  position:relative;
+  height:100vh;
+  overflow: hidden;
+
+  &.dark{
+    background-color: #181c27;
+  }
+  
+  &.light{
+    background-color: white;
+    color: #181c27;
+  }
+}
+
+

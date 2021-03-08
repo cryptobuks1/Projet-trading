@@ -1,0 +1,227 @@
+.ranking {
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+  height: 85vh;
+  margin-top: 2rem;
+
+  & table {
+    color: white;
+    z-index: 0;
+    & thead {
+      color: #181c27;
+      
+      & tr {
+        text-align: center;
+        font-weight: 600;
+        font-size: .8rem;
+        & th {
+          padding: 1rem .5rem;
+          position: sticky;
+          top: 0;
+          z-index: 1;
+          background: #4fdb88;
+        }
+
+        & th:nth-of-type(1) {
+          border-radius: 10px 0 0 0;
+        }
+
+        & th:nth-of-type(4) {
+          border-radius: 0 10px 0 0;
+        }
+
+        &__waitLoadding {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-self: center;
+          height: 79vh;
+        }
+        
+      }
+    }
+
+    .user {
+      text-decoration: underline;
+    }
+
+    & tbody {
+      
+      & tr {
+        border-bottom: 1px solid #30374b;
+        & td {
+          padding: 1.5rem .4rem;
+          font-size: 1.1rem;
+          text-align: center;
+        }
+      }
+
+      & tr:nth-of-type(odd) {
+        background-color: #1c1f2e;
+      }
+
+      & tr:nth-of-type(even) {
+        background-color: #11141b;
+        color: #4fdb88;
+      }
+      & tr.myPosition{
+        background: #4fdb88ad;
+        animation-duration: 0.2s;
+        animation-name: clignoter;
+        animation-iteration-count: 3;
+        transition: none;
+      }
+      @keyframes clignoter {
+        0%   { opacity:1; }
+        40%   {opacity:0; }
+        100% { opacity:1; }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .ranking {
+    margin-top: 2rem;
+
+    & table {
+      & thead {
+        & tr {
+          text-align: left;
+
+          & th {
+            padding-left: 0;
+          }
+
+          & th:nth-of-type(1) {
+            padding-left: 2rem;
+          }
+        }
+      }
+
+      & tbody {
+        & tr {
+          & td {
+            text-align: left;
+            padding-left: 0;
+          }
+
+          & td:nth-of-type(1) {
+            padding-right: 7rem;
+            padding-left: 2rem;
+          }
+
+          & td:nth-of-type(2) {
+            padding-right: 10rem;
+          }
+
+          & td:nth-of-type(3) {
+            padding-right: 4rem;
+          }
+
+          & td:nth-of-type(4) {
+            padding-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .ranking {
+    margin-top: 2rem;
+
+    & table {
+      & thead {
+        & tr {
+          text-align: left;
+
+          & th {
+            padding-left: 0;
+          }
+
+          & th:nth-of-type(1) {
+            padding-left: 2rem;
+          }
+        }
+      }
+
+      & tbody {
+        & tr {
+          & td {
+            text-align: left;
+            padding-left: 0;
+          }
+
+          & td:nth-of-type(1) {
+            padding-right: 10rem;
+            padding-left: 2rem;
+          }
+
+          & td:nth-of-type(2) {
+            padding-right: 25rem;
+          }
+
+          & td:nth-of-type(3) {
+            padding-right: 5rem;
+          }
+
+          & td:nth-of-type(4) {
+            padding-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// RESPONSIVE HEIGHT
+
+@media screen and (min-height: 400px) {
+  .ranking {
+    height: 73vh;
+  }
+}
+
+@media screen and (min-height: 500px) {
+  .ranking {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-height: 700px) {
+  .ranking {
+    height: 83vh;
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .ranking {
+    height: 86vh;
+  }
+}
+
+.light {
+  & .ranking table {
+    color: #181c27;
+  }
+
+  & .ranking tbody {
+    & tr {
+      border-bottom: 1px solid #9da0aa;
+    }
+
+    & tr:nth-of-type(odd) {
+      background-color: #f5f4f4;
+    }
+
+    & tr:nth-of-type(even) {
+      background-color: #181c27;
+      color: #4fdb88;
+    }
+  }
+}

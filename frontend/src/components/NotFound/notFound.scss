@@ -1,0 +1,32 @@
+.notFound {
+  height: 84%;
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+
+  &__img {
+    height: 20rem;
+    width: 20rem;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url("../../assets/Images/graph.svg");
+  }
+  &__title{
+    text-align:center;
+    line-height:1.5rem;
+    padding:1rem;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+}
+.light{
+  & .notFound{
+    &__title{
+
+      color: #181c27;
+    }
+  }
+}

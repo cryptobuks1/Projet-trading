@@ -1,0 +1,128 @@
+.connexion {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 85%;
+  align-items: center;
+  & h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .signUp {
+    
+  }
+
+
+  .resetPassword,
+  .newPass,
+   .signIn,
+   .signUp {
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      &__field {
+
+        &>div {
+          margin-bottom: 2rem;
+          display: flex;
+          flex-direction: column;
+
+          &>label {
+            padding: 0.5rem;
+            color: #fff;
+          }
+        }
+
+      }
+
+      & button {
+        border: none;
+        border-radius: 10px;
+        background: #4fdb88;
+        padding: 1rem 2.5rem;
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__form>div {
+      & input {
+        background: none;
+        border: 2px solid #4fdb88;
+        border-radius: 5px;
+        padding: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+        color: white;
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.219);
+        }
+      }
+    }
+  }
+
+
+  .signInRedirection,
+  .signUpRedirection {
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+  }
+}
+
+.message {
+  color: #F84960;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+
+  &__green {
+    color: #4fdb88;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+.light {
+  & .connexion {
+      & h2{
+      color: #181c27;
+    }
+
+    & .resetPassword,
+    & .newPass,
+    & .signIn,
+    & .signUp {
+      color: #181c27;
+
+      &__form>div {
+        & input {
+          color: #181c27;
+
+          &::placeholder {
+            color: #181c27c5;
+          }
+        }
+        & label{
+          color: #181c27;
+        }
+      }
+    }
+
+    .signInRedirection,
+    .signUpRedirection {
+      color: #181c27;
+    }
+  }
+}

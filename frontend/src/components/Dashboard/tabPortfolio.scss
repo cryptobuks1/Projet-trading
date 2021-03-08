@@ -1,0 +1,40 @@
+.hisPortfolio {
+  display: none;
+  &__title{
+    padding:1rem ;
+    text-align:center;
+    font-size: 1.2rem;
+  }
+  &__actived {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    z-index: 0;
+  }
+
+  &__table {
+    padding: 0 1rem;
+    overflow-y: auto;
+    height: 87%;
+
+  }
+
+}
+@media screen and (min-width:1080px){
+  .hisPortfolio{
+    &__actived{
+      display: flex;
+      align-self: center;
+      align-items: center;
+      width: 90%;
+      height: 85%;
+      padding-left: 5rem;
+      box-shadow: 3px 3px 24px -1px #000;
+      align-items: center;
+      justify-content:center;
+    }
+    &__title{
+      font-size: 1.3rem;
+    }
+  }
+}

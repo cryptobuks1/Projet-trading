@@ -1,0 +1,58 @@
+.dashboard {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 1.7rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  &__onglet {
+    padding: 0 1rem;
+
+    &-cryptos {}
+
+    &-orders {}
+  }
+
+  .buttonOnglet {
+    border: none;
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    background-color: #5f5f5f;
+
+    &__actived {
+      border: none;
+      border-radius: 2px;
+      padding: 0.5rem 1rem;
+      background-color: #4fdb88;
+    }
+  }
+
+}
+
+
+
+@media screen and (min-width: 1280px) {
+  .dashboard {
+    height: 90vh;
+    
+    
+    &__onglet {
+      padding-left: 5%;
+      z-index: 1;
+    }
+  }
+}
+
+.light {
+  & .dashboard {
+    color: #181c27;
+
+    & .headerTableCryptos, & .headerTableOrders {
+      background-color: white;
+    }
+  }
+}

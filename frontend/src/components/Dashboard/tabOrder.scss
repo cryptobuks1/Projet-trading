@@ -1,0 +1,154 @@
+.hisOrders {
+  display: none;
+
+  &__title {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  &__actived {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    z-index: 0;
+  }
+
+  &__table {
+    padding: 0 1rem;
+    overflow-y: auto;
+    height: 87%;
+  }
+
+}
+
+.headerTableOrders {
+  border-bottom: none;
+  background-color: #181c27;
+  z-index: 1;
+  padding-bottom: 0;
+}
+
+.hisOrder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  position: sticky;
+  top: 0.1px;
+  height: 4rem;
+  max-width: 100%;
+  border-bottom: 1px #4fdb88 solid;
+
+  &__name {
+    padding: 0.25rem 0.25rem;
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__type {
+    display: flex;
+    justify-content: center;
+    padding: 0.25rem 0.25rem;
+    align-items: center;
+    width: 20%;
+  }
+
+  &__quantity {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding: 0.25rem 0.25rem;
+    align-items: center;
+  }
+
+  &__amount {
+    width: 16%;
+    display: none;
+    justify-content: center;
+    padding: 0.25rem 0.25rem;
+    align-items: center;
+  }
+
+  &__quotation {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding: 0.25rem 0.25rem;
+    align-items: center;
+  }
+
+  &__createdAt {
+    display: none;
+    justify-content: center;
+    padding: 0.25 0.4 0.25 0.25rem;
+    align-items: center;
+  }
+}
+
+.dataGraph {
+  color: #fff;
+  font-size: 2rem;
+}
+.apexcharts-tooltip {
+  color: #000;
+}
+@media screen and (min-width: 600px) {
+
+  .hisOrder {
+    height: 5rem;
+    font-size: 1.2rem;
+
+    &__createdAt {
+      width: 20%;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &__name {
+      width: 16%;
+    }
+
+    &__type {
+      width: 16%
+    }
+
+    &__quantity {
+      width: 16%
+    }
+
+    &__quotation {
+      width: 16%
+    }
+
+    &__amount {
+      width: 16%;
+      display: flex;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .hisOrders {
+      &__actived {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        width: 90%;
+        height: 85%;
+        padding-left: 5rem;
+        box-shadow: 3px 3px 24px -1px #000;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__table {
+        width: 70%;
+      }
+
+    }
+
+  }
+
+}

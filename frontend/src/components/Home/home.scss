@@ -1,0 +1,140 @@
+.home {
+  height:100%;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  & h2 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  &__rules {
+    background-color: rgb(0, 0, 0, .2);
+    text-align: center;
+    border: solid 2px #4fdb88;
+    border-radius: 20px;
+    box-shadow: 3px 2px 15px -5px #191919;
+    padding: 2rem;
+    width: 100%;
+    line-height: 2rem;
+
+    & .dot-hidden {
+      display: none;
+    }
+    & .dot-visible {
+      display: inline;
+    }
+    
+    &__hidden {
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s linear;
+    }
+    
+    &__visible {
+      visibility: visible;
+      opacity: 1;
+      transition: all 0.3s linear;
+    }
+
+    & > p {
+      margin-bottom: 1rem;
+    }
+
+    & p {
+      font-weight: 300;
+      font-size: 1.1rem;
+    }
+
+    & p:nth-child(1){
+      margin-bottom: 1rem;
+    }
+
+    & p:nth-child(2){
+      font-weight: 400;
+    }
+
+    & .handleRules {
+      margin-top: 2rem;
+      background: none;
+      border: none;
+      padding: 0;
+    
+      & .iconCheveronDown {
+        color: #4fdb88;
+        transition: all 0.3s linear;
+      }
+      & .iconCheveronTop {
+        color: #4fdb88;
+        transform: rotate(180deg);
+        transition: all 0.3s linear;
+      }
+    }
+
+    &__p.hidden {
+      overflow: hidden;
+      max-height: 19vh;
+      transition: all 0.3s linear;
+    }
+
+    &__p.visible {
+      overflow: auto;
+      max-height: 40vh;
+      transition: all 0.3s linear;
+    }
+  }
+}
+
+.homeNotAlign {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.homeAlign {
+  top: 55%;
+  transform: translateY(-50%);
+}
+
+@media screen and (min-width: 350px) {
+  .home__rules__p.hidden {
+    max-height: 15vh;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .home__rules__p.hidden {
+    max-height: 11vh;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .home__rules__p.hidden {
+    max-height: 7vh;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .home {
+    width: 100vw;
+
+    &__rules {
+      width: 70%;
+    }
+  }
+
+  .homeAlign {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.light {
+  & .home {
+    color: #181c27;
+  }
+}

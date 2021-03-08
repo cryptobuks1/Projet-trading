@@ -1,0 +1,82 @@
+.About
+{
+  width:100%;
+  height:90vh;
+  margin-top:5rem;
+  color:#4fdb88;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.Title
+{
+  font-weight: bold;
+  padding:1rem;
+}
+
+.Presentation
+{
+  color:#f1f2f3;
+  font-size:0.9rem;
+  line-height: 1.3rem;
+  padding:0.4rem;
+  margin:auto;
+}
+
+.CardList
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin:auto;
+  padding-bottom:10rem;
+}
+.CardInfos{
+  width: 100%;
+  color: #212121;
+}
+.LinkProject
+{
+  padding:1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  margin-top:-10rem;
+}
+.GithubIcon
+{
+  width:20px;
+  margin:0.5rem;
+}
+@media only screen and (min-width: 600px)
+{
+  .CardList
+  {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 800px)
+{
+  .Presentation
+  {
+    width:70%;
+  }
+}
+
+@media only screen and (min-width: 1000px)
+{
+  .Presentation
+  {
+    width:50%;
+  }
+}
+
+
+
+

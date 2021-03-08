@@ -1,0 +1,17 @@
+.field-input-order{
+  color: #fff;
+  border-radius: 7px;
+  border: 1px #4fdb88 solid;
+  width: 10rem;
+  height: 2rem;
+  background-color: #181c27;
+}
+.field-label{
+  padding-right: 1rem;
+}
+@media screen and (min-width: 1400px) {
+  .field-input-order{
+  width: 15rem;
+  font-size: 1.3rem;
+  }
+}

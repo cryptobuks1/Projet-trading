@@ -1,0 +1,105 @@
+
+.Card
+{
+  width:50%;
+  margin:auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:0;
+  color:#212121;
+  font-size: 0.9rem;
+  margin:2rem;
+  border:1px solid #f1f2f3;
+  box-shadow: 0 0 5px #f1f2f3;
+  background-color: #f1f2f3;
+  flex-wrap: nowrap;
+}
+
+.Joss, .Julien, .Christophe, .Walid
+{
+  width:100%;
+  height:190px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Joss
+{
+  background-image: url('../../assets/Images/JossAvatar.png');
+}
+.Christophe
+{
+  background-image: url('../../assets/Images/ChristopheAvatar.jpg');
+}
+.Julien
+{
+  background-image: url('../../assets/Images/JulienAvatar.jpg');
+
+}
+.Walid
+{
+  background-image: url('../../assets/Images/WalidAvatar.png');
+}
+
+.CardInfos
+{
+  background-color:#f1f2f3;
+}
+
+
+
+.Name, .Fonction, .Link
+{
+  padding:0.4rem;
+  word-wrap: break-word;
+
+}
+.Name
+{
+  font-weight: bold;
+}
+
+.Link a
+{
+  display: inline-block;
+  word-break: break-word;
+  color:#4fdb88;
+  font-size:0.8rem;
+}
+
+.Speciality
+{
+  margin:0.4rem;
+  width: 35px;
+}
+.LinkedinIcon
+{
+  width:25px;
+}
+@media only screen and (min-width: 600px)
+{
+  .Card
+  {
+    width:calc(100% / 4);
+  }
+}
+
+
+@media only screen and (min-width: 900px)
+{
+  .Card
+  {
+    height: 19rem;
+    width:calc(60% / 3);
+  }
+}
+
+@media only screen and (min-width: 1300px)
+{
+  .Card
+  {
+    width:calc(40% / 4);
+  }
+}

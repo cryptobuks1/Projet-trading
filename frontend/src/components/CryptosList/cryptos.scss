@@ -1,0 +1,154 @@
+.cryptos {
+  color: #fff;
+  padding: 0rem 1rem;
+  overflow-y: scroll;
+  height: 88vh;
+
+  &__waitLoadding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 79vh;
+  }
+
+  &__list::-webkit-scrollbar {
+    background: #1f6139;
+    width: 2px;
+    border-radius: 10px;
+  }
+
+  &__list::-webkit-scrollbar-thumb {
+    background: #4fdb88;
+  }
+
+  &__searchBar {
+    margin-bottom: 1.5rem;
+
+    & input {
+      background: none;
+      border: 2px solid #4fdb88;
+      border-radius: 5px;
+      padding: .5rem 0 .5rem .5rem;
+      font-size: 1.2rem;
+      text-align: left;
+      color: #fff;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    position: sticky;
+    top: 0.1px;
+    background-color: #181c27;
+
+    & div {
+      padding: 0.25rem 0.25rem
+    }
+  }
+
+  &__logoName {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__img {
+    max-height: 70%;
+    border-radius: 10px;
+  }
+
+  &__name {
+    padding-left: 0.5rem;
+  }
+
+  &__price {
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.25rem 0.25rem;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.25rem 0.25rem
+  }
+
+  &__price24 {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem 0.25rem;
+  }
+
+  &__crypto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4rem;
+    border-bottom: 1px #4fdb88 solid;
+  }
+
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 1080px) {
+
+  .cryptos {
+    padding: 0rem 14rem 0rem 16rem;
+    font-size: 1.2rem;
+    &__list::-webkit-scrollbar {
+      background: #1f6139;
+      width: 2px;
+      border-radius: 10px;
+    }
+  
+
+    &__header {
+      padding: 1rem 0rem;
+    }
+
+    &__crypto {
+      height: 6rem;
+
+      :hover {
+        zoom: 120%;
+      }
+    }
+  }
+
+  .link {
+    width: 100%;
+  }
+}
+
+.light {
+  & .cryptos {
+    color: #181c27;
+
+    &__header {
+      background-color: white;
+    }
+
+    &__searchBar input {
+      color: #181c27;
+    }
+  }
+}
